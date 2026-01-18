@@ -1,5 +1,3 @@
-import pymysql
-pymysql.install_as_MySQLdb()
 """
 Django settings for motiver project.
 
@@ -27,12 +25,8 @@ SECRET_KEY = "django-insecure-+l%=$==#%%si=jorfy^mogi%o!dd$6w#%r5fm%_t681hj8f5*-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CSRF_TRUSTED_ORIGINS = [
-    "https://motivertech.com",
-    "https://www.motivertech.com",
-]
+ALLOWED_HOSTS = []
 
-ALLOWED_HOSTS = ['motivertech.com','www.motivertech.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
@@ -79,16 +73,16 @@ WSGI_APPLICATION = "motiver.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-       "NAME": "motivert_wp812",
-       "USER": "motivert",
-        "PASSWORD": "motiver@0password",
-        "HOST": "localhost",
-        "PORT": 3306,
-    }
-}
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.mysql",
+#         "NAME": "motiver_db",
+#         "USER": "root",
+#         "PASSWORD": "",
+#         "HOST": "localhost",
+#         "PORT": 3306,
+#     }
+# }
 
 
 # Password validation
